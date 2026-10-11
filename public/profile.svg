@@ -1,1 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160"><rect width="160" height="160" fill="#16a34a"/><circle cx="80" cy="62" r="28" fill="#dcfce7"/><path d="M24 148c4-34 28-50 56-50s52 16 56 50z" fill="#dcfce7"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0b1020"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <!-- neural network nodes -->
+  <g stroke="#22d3ee" stroke-opacity=".55" stroke-width="1.5" fill="none">
+    <path d="M60 60L110 40L170 70L230 45L250 90"/>
+    <path d="M60 60L90 105L150 100L170 70"/>
+    <path d="M110 40L150 100L210 110L230 45"/>
+    <path d="M250 90L210 110L170 70"/>
+    <path d="M90 105L110 40"/>
+  </g>
+  <g fill="#67e8f9">
+    <circle cx="60" cy="60" r="5"/><circle cx="110" cy="40" r="5"/>
+    <circle cx="170" cy="70" r="6"/><circle cx="230" cy="45" r="5"/>
+    <circle cx="250" cy="90" r="5"/><circle cx="90" cy="105" r="5"/>
+    <circle cx="150" cy="100" r="6"/><circle cx="210" cy="110" r="5"/>
+  </g>
+  <!-- AI chip -->
+  <g transform="translate(150 100)">
+    <g stroke="#a5b4fc" stroke-width="3" stroke-linecap="round">
+      <path d="M-18 -30v-10M0 -30v-10M18 -30v-10M-18 30v10M0 30v10M18 30v10M-30 -18h-10M-30 0h-10M-30 18h-10M30 -18h10M30 0h10M30 18h10"/>
+    </g>
+    <rect x="-30" y="-30" width="60" height="60" rx="8" fill="#4f46e5" stroke="#a5b4fc" stroke-width="3"/>
+    <text x="0" y="9" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="26" fill="#fff">AI</text>
+  </g>
+  <!-- road -->
+  <path d="M0 190L300 190L300 300L0 300Z" fill="url(#road)"/>
+  <path d="M150 190L110 300M150 190L190 300" stroke="#475569" stroke-width="2"/>
+  <g stroke="#fbbf24" stroke-width="4" stroke-linecap="round">
+    <path d="M150 200v10M150 225v16M150 255v24"/>
+  </g>
+  <!-- sensing beams -->
+  <path d="M150 232L70 190M150 232L230 190" stroke="#22d3ee" stroke-opacity=".6" stroke-width="2" stroke-dasharray="5 5"/>
+  <!-- car (rear view) -->
+  <g transform="translate(150 255)">
+    <rect x="-44" y="-8" width="88" height="30" rx="9" fill="#e2e8f0"/>
+    <path d="M-32 -8L-24 -30H24L32 -8Z" fill="#cbd5e1"/>
+    <path d="M-25 -10L-19 -26H19L25 -10Z" fill="#0ea5e9"/>
+    <rect x="-40" y="2" width="16" height="8" rx="3" fill="#ef4444"/>
+    <rect x="24" y="2" width="16" height="8" rx="3" fill="#ef4444"/>
+    <rect x="-34" y="20" width="18" height="10" rx="3" fill="#0f172a"/>
+    <rect x="16" y="20" width="18" height="10" rx="3" fill="#0f172a"/>
+    <!-- lidar -->
+    <rect x="-7" y="-36" width="14" height="7" rx="3" fill="#22d3ee"/>
+  </g>
+</svg>

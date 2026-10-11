@@ -6,7 +6,7 @@ export default function LinkCard({ id, title }: Props) {
       href={`/go/${id}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="block w-full rounded-2xl border border-zinc-300 bg-white px-5 py-4 text-center font-medium transition hover:-translate-y-0.5 hover:shadow-md dark:border-zinc-700 dark:bg-zinc-900"
+      className="block w-full rounded-3xl border border-white/60 bg-white/40 px-6 py-4 text-center font-medium text-foreground shadow-[0_4px_24px_rgba(190,120,80,0.10)] backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:bg-white/60 hover:shadow-[0_8px_28px_rgba(190,120,80,0.16)]"
     >
       {title}
     </a>
